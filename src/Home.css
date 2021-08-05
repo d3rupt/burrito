@@ -1,0 +1,101 @@
+.home {
+    overflow-x: hidden;
+    height: 125vh;
+}
+
+.home-background {
+    height: 100%;
+    background-image: url('./images/introDesert.png');
+    background-size: cover;
+    background-position: top center;
+}
+
+.home-base {
+    height: 120vh;
+    color: white;
+}
+
+.home-parallaxBack {
+    transform: translateZ(-4px) scale(5.25);
+    background: #b1dbf5;
+    justify-content: flex-start;
+    padding-left: 10%;
+}
+
+.home-sun {
+    height: 20rem;
+    width: 20rem;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 15px yellow;
+}
+
+.home-parallaxMid {
+    transform: translateZ(-1px) scale(2.1);
+}
+
+.home-parallaxFront {
+    transform: translateZ(0);
+    justify-content: flex-end;
+}
+.sand {
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    background: #cb7f07;
+}
+
+.sand-hill {
+    height: 15rem;
+    width: 15rem;
+    transform: rotate(45deg);
+    background: #cb7f07;
+}
+
+.home-banner {
+    height: 50%;
+    background-image: url('./images/banner1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    padding: 1%;
+}
+
+#cloud1 {
+    position: absolute;
+    top: 40%;
+    right: -8rem;
+    height: 5rem;
+    width: 8rem;
+    opacity: 0.75;
+    animation: clouds 30s -10s linear infinite;
+}
+
+#cloud2 {
+    position: absolute;
+    top: 35%;
+    right: -8rem;
+    height: 5rem;
+    width: 8rem;
+    opacity: 0.65;
+    animation: clouds 45s 2s linear infinite;
+}
+
+#cloud3 {
+    position: absolute;
+    top: 10%;
+    right: -12rem;
+    height: 7rem;
+    width: 12rem;
+    animation: clouds 35s 1s linear infinite;
+}
+
+@keyframes clouds {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-110vw)
+    }
+}

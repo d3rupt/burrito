@@ -1,0 +1,142 @@
+.menu {
+    position: relative;
+    flex-direction: column;
+    background: #65c9d0;
+    color: white;
+    padding: 5rem 0;
+}
+
+.menu > h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #e75c29;
+}
+
+.menu-container > h4 {
+    font-weight: 400;
+}
+
+.menu-borderContainer {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    flex-direction: column;
+    justify-content: space-between !important;
+    height: 100%;
+}
+
+.menuBorder {
+    height: 5vh;
+    background-image: url('./images/menuBorder.png');
+    background-size: contain;
+    background-repeat: space;
+    opacity: 0.5;
+}
+
+.menu-lace {
+    height: 100%;
+    position: absolute;
+    background-image: url('./images/menuLace.png');
+    background-size: 100rem;
+    background-position: top;
+    background-repeat: space;
+    opacity: 0.25;
+}
+
+.menu-optionsContainer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding: 0 1rem;
+    /*border: 1px solid red;*/
+}
+
+.menu-options {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.menu-option > h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    text-align: left;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+
+.menu-option {
+    width: 100%;
+    justify-content: flex-start !important;
+}
+
+.menu-option > img {
+    height: 1rem;
+    width: auto;
+    object-fit: contain;
+    opacity: 1;
+    transition: all 0.25s;
+}
+
+.menu-option h2:hover {
+    opacity: 0.75;
+}
+
+.menu-option:hover > img {
+    opacity: 1 !important;
+    transform: translateX(0.75rem);
+}
+
+.menu-menuContainer {
+    font-size: 125%;
+    padding: 1rem;
+    border: 1px solid white;
+    backdrop-filter: blur(3px);
+    background: rgba(255,255,255,0.05);
+}
+.menu-container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.menu-menu {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-menu * {
+    margin: 0.5rem 0;
+}
+
+.menu-menu > h3 {
+    border-bottom: 3px dotted #e75c29;
+}
+.menu-rows {
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.menu-menuRow {
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.menu-menuItem {
+    text-align: left;
+}
+
+.menu-menuItem > p {
+    font-weight: 300;
+}
+
+.menu-modalContainer {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background: white;
+}

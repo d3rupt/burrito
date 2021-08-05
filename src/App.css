@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.footer {
+  min-height: 100vh;
+  padding: 5rem 0;
+  color: white;
+}
+
+.footer-borderContainer {
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  justify-content: space-between !important;
+  opacity: 0.5;
+}
+
+.footer-border {
+  height:5vh;
+  background-image: url('./images/footerBorder.png');
+  background-size: contain;
+  background-repeat: space;
+}
